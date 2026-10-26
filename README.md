@@ -3,14 +3,13 @@
 An AI-ready decompile of Star Wars: X-Wing vs. TIE Fighter (1997) and
 its Balance of Power expansion.
 
-This repository is the decompile of X-Wing vs. TIE Fighter, the space combat
-game LucasArts released in 1997. It is rebuilt from the 2 game programs:
-`Z_XVT__.EXE`, and `z_bop__.exe`, Balance
-of Power. AI-ready means the code is written to be read by AI.
-Each function,
-one small piece of the program, and each variable gets a plain name
-chosen by reading what it does, so a person or an AI model working in
-the code can follow it.
+This repository is the decompile of X-Wing vs. TIE Fighter, the space
+combat game LucasArts released in 1997. It is rebuilt from the 2 game
+programs: `Z_XVT__.EXE` and `z_bop__.exe` (Balance of Power). AI-ready
+means the code is written to be read by AI. Each function, one small
+piece of the program, and each variable gets a plain name chosen by
+reading what it does, so a person or an AI model working in the code can
+follow it.
 
 ## Why another decompile?
 
@@ -19,6 +18,16 @@ no bug fixes: each function does what the original does, bugs included.
 That makes it a fixed starting point for other work, such as a port to
 a new system, a mod, a study of how the game works, or a check on
 someone else's rebuild.
+
+It is also built for AI models to work in. The names say what each
+piece does, so a model helping with one of those projects can read and
+change the code without first having to work out what it means.
+
+The MIT license suits a base like this. It lets anyone reuse the code
+on one condition: keep its copyright and license notice. A companion
+project, such as a port or a mod, can carry this code inside its own
+work, under its own license, and take each new function as it arrives
+here.
 
 ## Status
 
@@ -29,10 +38,11 @@ only this page and its license.
 ## The legal side
 
 Decompiling a commercial game is a legal gray area. The game itself
-still belongs to its copyright holder: LucasArts & TotalyGames published it, and its
-rights now sit with Lucasfilm, part of The Walt Disney Company. Star
-Wars and X-Wing are trademarks of Lucasfilm. This project is not
-affiliated with or endorsed by either company.
+still belongs to its copyright holder: Totally Games made it and
+LucasArts published it, and its rights now sit with Lucasfilm, part of
+The Walt Disney Company. Star Wars and X-Wing are trademarks of
+Lucasfilm. This project is not affiliated with or endorsed by any of
+these companies.
 
 The source code here is released under the MIT license (see `LICENSE`)
 so that anyone can use it in their own work quickly. That license
@@ -41,6 +51,5 @@ the game itself: its story, art, sound, music, names and trademarks.
 
 - **You need your own copy of the game.** No game files are included:
   no art, sound, missions or programs.
-  
 - **It is provided as is,** with no warranty of any kind, as the MIT
   license says.

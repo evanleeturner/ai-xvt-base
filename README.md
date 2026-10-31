@@ -11,6 +11,12 @@ piece of the program, and each variable gets a plain name chosen by
 reading what it does, so a person or an AI model working in the code can
 follow it.
 
+The end of a name will say how sure that reading is. A name with
+nothing added is a confident one. A name ending in `_Likely` is
+probably right. A name ending in `_Guess` is the least sure, so check
+it against the code before relying on it. Variable names will carry
+the same endings.
+
 ## Why another decompile?
 
 This repo changes nothing. It has no improvements, no new features and

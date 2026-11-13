@@ -1,0 +1,19 @@
+// SPDX-License-Identifier: MIT
+
+#[allow(non_upper_case_globals)]
+unsafe extern "C" {
+    static mut DAT_00758d49: u32;
+    static mut DAT_00758d4d: u32;
+}
+
+#[unsafe(no_mangle)]
+#[allow(non_snake_case)]
+pub unsafe extern "C" fn FUN_004ddc70(param_1: *mut u32, param_2: *mut u32) {
+    // SAFETY: the globals are the game's own memory; the parameters point at
+    // caller-provided u32 slots, written where the original does. The globals
+    // sit at unaligned addresses, so they are read by address, unaligned.
+    unsafe {
+        param_1.write_unaligned((&raw const DAT_00758d49).read_unaligned());
+        param_2.write_unaligned((&raw const DAT_00758d4d).read_unaligned());
+    }
+}

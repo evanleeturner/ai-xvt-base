@@ -1,0 +1,4 @@
+# The game's own machine: 32-bit Windows, so each export takes the
+# original's calling convention and decorated name.
+[build]
+target = "i686-pc-windows-gnu"

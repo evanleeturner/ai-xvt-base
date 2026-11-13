@@ -1,0 +1,79 @@
+{
+  "behavior_equivalence": {
+    "assurance": "empirical",
+    "method": "differential_run",
+    "unverified_residue": [
+      "memory outside the frame",
+      "calls out",
+      "floats"
+    ],
+    "verdict": "preserved"
+  },
+  "builds": [
+    {
+      "compiler": "clang 21.0.0",
+      "flags": [
+        "--target=i386-pc-windows-msvc",
+        "-O0"
+      ]
+    },
+    {
+      "compiler": "clang 21.0.0",
+      "flags": [
+        "--target=i386-pc-windows-msvc",
+        "-O2"
+      ]
+    },
+    {
+      "compiler": "clang 21.0.0",
+      "flags": [
+        "--target=i386-pc-windows-msvc",
+        "-O0",
+        "-fsanitize=undefined",
+        "-fsanitize-trap=undefined"
+      ]
+    }
+  ],
+  "created_at": "2026-10-26T21:54:52-05:00",
+  "evidence": {
+    "decompiler": {
+      "name": "Ghidra",
+      "version": "12.1.4"
+    }
+  },
+  "file_sha256": "9b73e84fd07701078178d14bc86a9b97e80c84effaed69efe9ebedfd52660814",
+  "gates": {
+    "compiles": {
+      "verdict": "passed"
+    },
+    "side_by_side": {
+      "verdict": "passed"
+    },
+    "stack_balances": {
+      "verdict": "passed"
+    }
+  },
+  "inputs": {
+    "edge_count": 1,
+    "random_count": 0,
+    "seed": 0
+  },
+  "label_version": 1,
+  "machine": {
+    "name": "Wine",
+    "version": "wine-9.0 (Ubuntu 9.0~repack-4build3)"
+  },
+  "provenance": {
+    "agent": "ReAgent"
+  },
+  "touched_surface": {
+    "address": "004651e0",
+    "source_sha256": "f84636b73a462e9a56aef1c150e2b75d614d17c471f77838e63d6346c9acec3f",
+    "target": "z_xvt"
+  },
+  "verification": {
+    "caveats": [
+      "a clean compile is necessary, never sufficient"
+    ]
+  }
+}

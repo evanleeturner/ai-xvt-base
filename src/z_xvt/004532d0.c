@@ -1,0 +1,80 @@
+/* SPDX-License-Identifier: MIT */
+/* z_xvt 004532d0 */
+undefined4 * __cdecl FUN_0048e480(int param_1, char * param_2);
+
+void __cdecl FUN_004532d0(undefined4 *param_1, int param_2, undefined4 param_3, undefined4 param_4)
+{
+  float fVar1;
+  float *pfVar2;
+  int iVar3;
+  int iVar4;
+  
+  if (param_1 != (undefined4 *)0x0) {
+    while (param_1[1] == 7) {
+      param_1 = FUN_0048e480(param_2, (char *)param_1[5]);
+      if (param_1 == (undefined4 *)0x0) {
+        return;
+      }
+    }
+    iVar3 = param_1[1];
+    if (iVar3 == 1) {
+      iVar3 = param_1[4];
+      if (0 < iVar3) {
+        fVar1 = (float)(*(double *)&param_3);
+        pfVar2 = (float *)(param_1[5] + 4 + iVar3 * 0x4c);
+        while(1) {
+          iVar3 = iVar3 + -1;
+          *pfVar2 = *pfVar2 * fVar1;
+          pfVar2[1] = pfVar2[1] * fVar1;
+          pfVar2[2] = pfVar2[2] * fVar1;
+          pfVar2[3] = pfVar2[3] * fVar1;
+          pfVar2[4] = pfVar2[4] * fVar1;
+          if (iVar3 == 0) break;
+          pfVar2[5] = pfVar2[5] * fVar1;
+          pfVar2 = pfVar2 + 6;
+        }
+        pfVar2[5] = pfVar2[5] * fVar1;
+      }
+    }
+    else if (iVar3 == 3) {
+      iVar3 = param_1[4];
+      if (0 < iVar3) {
+        fVar1 = (float)(*(double *)&param_3);
+        pfVar2 = (float *)param_1[5];
+        while(1) {
+          iVar3 = iVar3 + -1;
+          *pfVar2 = *pfVar2 * fVar1;
+          pfVar2[1] = pfVar2[1] * fVar1;
+          if (iVar3 == 0) break;
+          pfVar2[2] = pfVar2[2] * fVar1;
+          pfVar2 = pfVar2 + 3;
+        }
+        pfVar2[2] = pfVar2[2] * fVar1;
+      }
+    }
+    else if (iVar3 == 0x15) {
+      iVar3 = param_1[2];
+      if (0 < iVar3) {
+        pfVar2 = (float *)param_1[5];
+        while(1) {
+          fVar1 = *pfVar2 / (float)(*(double *)&param_3);
+          iVar3 = iVar3 + -1;
+          if (iVar3 == 0) break;
+          *pfVar2 = fVar1;
+          pfVar2 = pfVar2 + 1;
+        }
+        *pfVar2 = fVar1;
+      }
+    }
+    iVar4 = 0;
+    iVar3 = 0;
+    if (0 < (int)param_1[2]) {
+      do {
+        iVar4 = iVar4 + 4;
+        iVar3 = iVar3 + 1;
+        FUN_004532d0(*(undefined4 **)(param_1[3] + -4 + iVar4),param_2,param_3,param_4);
+      } while (iVar3 < (int)param_1[2]);
+    }
+  }
+  return;
+}

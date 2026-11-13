@@ -1,0 +1,82 @@
+/* SPDX-License-Identifier: MIT */
+/* z_bop 004211d0 */
+void __cdecl FUN_004211d0(float *param_1, float *param_2)
+{
+  float fVar1;
+  float fVar2;
+  float fVar3;
+  float fVar4;
+  float fVar5;
+  float fVar6;
+  float fVar7;
+  float fVar8;
+  float fVar9;
+  float fVar10;
+  float fVar11;
+  float fVar12;
+  float fVar13;
+  float fVar14;
+  float fVar15;
+  float fVar16;
+  float fVar17;
+  float fVar18;
+  float fVar19;
+  float fVar20;
+  float fVar21;
+  float fVar22;
+  float fVar23;
+  float fVar24;
+  float fVar25;
+  float fVar26;
+  float fVar27;
+  float fVar28;
+  float fVar29;
+  float fVar30;
+  float fVar31;
+  float fVar32;
+  float fVar33;
+
+  fVar1  = *param_2;
+  fVar2  = param_2[3];
+  fVar3  = param_2[6];
+  fVar4  = param_2[1];
+  fVar5  = param_2[7];
+  fVar6  = param_2[4];
+  fVar7  = param_2[1];
+  fVar8  = param_1[1];
+  fVar9  = param_2[4];
+  fVar10 = param_2[7];
+  fVar11 = param_2[4];
+  fVar12 = param_2[7];
+  fVar13 = param_2[1];
+  fVar14 = param_1[2];
+  fVar15 = *param_1;
+  fVar16 = param_2[2];
+  fVar17 = param_2[5];
+  fVar18 = param_1[3];
+  fVar19 = param_2[8];
+  fVar20 = param_1[1];
+  fVar21 = param_2[2];
+  fVar22 = param_2[5];
+  fVar23 = param_1[4];
+  fVar24 = param_2[8];
+  fVar25 = param_2[5];
+  fVar26 = param_1[5];
+  fVar27 = param_2[8];
+  fVar28 = param_2[2];
+  fVar29 = param_1[2];
+  fVar30 = *param_2;
+  fVar31 = param_2[6];
+  fVar32 = param_2[3];
+  fVar33 = param_1[3];
+
+  param_1[1] = param_2[3] * param_1[4] + param_2[6] * param_1[7] + *param_2 * param_1[1];
+  param_1[2] = fVar3 * param_1[8] + param_1[5] * fVar2 + fVar1 * param_1[2];
+  param_1[3] = param_1[3] * fVar6 + param_1[6] * fVar5 + *param_1 * fVar4;
+  *param_1   = fVar31 * param_1[6] + fVar30 * *param_1 + fVar32 * fVar33;
+  param_1[5] = fVar13 * fVar14 + fVar12 * param_1[8] + param_1[5] * fVar11;
+  param_1[4] = fVar10 * param_1[7] + fVar9 * param_1[4] + fVar7 * fVar8;
+  param_1[6] = param_1[6] * fVar19 + fVar17 * fVar18 + fVar15 * fVar16;
+  param_1[7] = param_1[7] * fVar24 + fVar22 * fVar23 + fVar20 * fVar21;
+  param_1[8] = fVar28 * fVar29 + fVar27 * param_1[8] + fVar25 * fVar26;
+}

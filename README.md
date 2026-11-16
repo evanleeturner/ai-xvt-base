@@ -38,23 +38,24 @@ here.
 ## Status
 
 Each rebuilt function arrives here once it passes its checks against
-the original program. The first 1,146 arrived on 13 November 2026: 605
-from X-Wing vs. TIE Fighter and 541 from Balance of Power. Each is in
-its own file under `src/`, named by its address, with a short record
-under `provenance/` of which checks it passed and which tools made it.
-None has a plain name yet. 5 keep a name that came with the
-decompiler's output, such as `timeGetTime`, and the other 1,141 still
-carry its stand-in names, `FUN_` and the address, until a later pass
-names them. A list of every named function, with a link to its file,
-is in `src/README.md`.
+the original program. The first 1,146 arrived on 13 November 2026, and
+909 more on 16 November: 2,055 in all, 1,013 from X-Wing vs. TIE
+Fighter and 1,042 from Balance of Power. Each is in its own file under
+`src/`, named by its address, with a short record under `provenance/`
+of which checks it passed and which tools made it. None has a plain
+name yet. 13 keep a name that came with the decompiler's output, such
+as `timeGetTime`, and the other 2,042 still carry its stand-in names,
+`FUN_` and the address, until a later pass names them. A list of every
+named function, with a link to its file, is in `src/README.md`.
 
-On the same day, 1,120 of these functions also arrived in Rust, under
-`rust/`: 588 from X-Wing vs. TIE Fighter and 532 from Balance of
-Power. An AI model converted each one from its rebuilt C with no
-fixes, so the Rust keeps the original's bugs too. Each of the two
-folders is a Rust library set up to build for 32-bit x86 Windows only,
-the machine the original ran on. The Rust still uses the stand-in
-names, which a later pass will replace.
+On 13 November 2026, 1,120 of these functions also arrived in Rust,
+under `rust/`, and 888 more on 16 November: 2,008 in all, 988 from
+X-Wing vs. TIE Fighter and 1,020 from Balance of Power. An AI model
+converted each one from its rebuilt C with no fixes, so the Rust keeps
+the original's bugs too. Each of the two folders is a Rust library set
+up to build for 32-bit x86 Windows only, the machine the original ran
+on. The Rust still uses the stand-in names, which a later pass will
+replace.
 
 ## The legal side
 
